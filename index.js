@@ -37,6 +37,7 @@ function viewCart() {
        console.log(printThreeOrMoreItems);
     }
 }
+
     
     
 function total() {
