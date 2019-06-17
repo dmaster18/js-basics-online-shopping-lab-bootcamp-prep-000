@@ -31,7 +31,7 @@ function viewCart() {
       
     else {
        for(var i = 0; i < cart.length-1; i++) {
-         cartItems.push(` ${Object.keys(cart[i]))} at $${cart[i][Object.keys(cart[i])]}
+         cartItems.push(` ${Object.keys(cart[i]))} at $${cart[i][Object.keys(cart[i])]}`)
        }
     }
 }
