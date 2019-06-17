@@ -11,11 +11,6 @@ function addToCart (item) {
 }
 
 
-addToCart('glove')
-addToCart('ball')
-addToCart('skis')
-addToCart('shoes')
-
 function viewCart() {
   var cartItems = [];
   if (cart.length === 0) {
