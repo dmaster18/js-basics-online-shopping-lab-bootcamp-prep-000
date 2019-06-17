@@ -18,7 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  const itemWithPrices = [];
+  var cartItems = [];
   for(var i = 0; i < cart.length; i++)
     {
       var itemNames = Object.keys(cart[i]);
