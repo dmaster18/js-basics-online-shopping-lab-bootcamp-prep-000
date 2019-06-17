@@ -37,13 +37,48 @@ viewCart(cart)
     
     
 function total() {
-  // write your code here
+  var pricePerItemInCart = [];
+  var totalPrice = 0
+  
+  for(var i = 0; i < cart.length; i++) {
+  var itemPrice = cart[i][Object.keys(cart[i])]
+    pricePerItemInCart.push(itemPrice)
+    }
+  
+  for (var j =0; j<pricePerItemInCart.length; j++) {
+    totalPrice = pricePerItemInCart[j]+=totalPrice
+  }
+  return totalPrice
 }
+total(cart)
 
 function removeFromCart(item) {
-  // write your code here
+  for (var i = 0; i <cart.length; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      cart.splice(i, 1)
+      return cart
+    } 
+  }
+  console.log('That item is not in your cart.')
+  return cart
 }
 
+removeFromCart('skis')
+  
+  
+  
 function placeOrder(cardNumber) {
-  // write your code here
-}
+  if(cardNumber) {
+    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
+    for (var i = cart.length; i>= 0; i--) {
+      cart.pop();
+    } 
+    } else 
+      console.log('Sorry, we don\'t have a credit card on file for you.')
+return cart;
+  }
+
+placeOrder()
+
+
+
