@@ -30,7 +30,9 @@ function viewCart() {
       var printTwoItems = `In your cart, you have ${Object.keys(cart[cart.length-2])} at $${cart[cart.length-2][Object.keys(cart[cart.length-2])]} and ${Object.keys(cart[cart.length-1])} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}`}
       
     else {
-       
+       for(var i = 0; i < cart.length-1; i++) {
+         
+       }
     }
 }
     
