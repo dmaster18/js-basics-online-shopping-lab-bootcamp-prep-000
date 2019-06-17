@@ -1,5 +1,3 @@
-
-
 var cart = [];
 
 function addToCart (item) {
@@ -10,6 +8,11 @@ function addToCart (item) {
   return cart;
 }
 
+
+addToCart('glove')
+addToCart('ball')
+addToCart('skis')
+addToCart('shoes')
 
 function viewCart() {
   var cartItems = [];
@@ -34,8 +37,8 @@ function viewCart() {
   }
 }
 viewCart(cart)
-    
-    
+
+
 function total() {
   var pricePerItemInCart = [];
   var totalPrice = 0
