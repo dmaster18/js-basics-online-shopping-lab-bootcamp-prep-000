@@ -25,7 +25,7 @@ function viewCart() {
   else if (cart.length.length === 1) {
       return console.log(`In your cart, you have ${itemsWithPrices.join()}`);
       }
-  else if (itemsWithPrices.length === 2) {
+  else if (cart.length === 2) {
       return console.log(`In your cart, you have ${itemsWithPrices[0]}, and ${itemsWithPrices[1]}`);
       }
     else {
