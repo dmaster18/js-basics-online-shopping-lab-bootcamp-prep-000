@@ -24,7 +24,7 @@ function viewCart() {
       }
   else if (cart.length.length === 1) {
       var printOneItem = `In your cart, you have ${Object.keys(cart[0]))} at $${cart[0][Object.keys(cart[0])]}.`
-      console.log(printOneItem)
+      console.log(printOneItem);
       }
   else if (cart.length === 2) {
       return console.log(`In your cart, you have ${itemsWithPrices[0]}, and ${itemsWithPrices[1]}`);
