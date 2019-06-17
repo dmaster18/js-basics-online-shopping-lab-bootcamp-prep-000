@@ -38,6 +38,7 @@ function viewCart() {
     }
 }
 
+viewCart(cart);
     
     
 function total() {
