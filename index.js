@@ -27,7 +27,7 @@ function viewCart() {
       console.log(printOneItem);
       }
   else if (cart.length === 2) {
-      return console.log(`In your cart, you have ${itemsWithPrices[0]}, and ${itemsWithPrices[1]}`);
+      var printTwoItems = `In your cart, you have ${Object.keys(cart[cart.length-2])} at $${cart
       }
     else {
        return console.log(`In your cart, you have ${itemsWithPrices.slice(0,-1).join(' , ')}, and ${itemWithPrices.slice(-1)}.`)
