@@ -22,7 +22,7 @@ function viewCart() {
     if (cart.length===0) {
       return console.log("Your shopping cart is empty.");
       }
-  else if (itemsWithPrices.length === 1) {
+  else if (cart.length.length === 1) {
       return console.log(`In your cart, you have ${itemsWithPrices.join()}`);
       }
   else if (itemsWithPrices.length === 2) {
